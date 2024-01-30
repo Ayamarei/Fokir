@@ -1,0 +1,554 @@
+/*============= START GLOBAL============ */
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family:'Roboto', sans-serif;
+   
+}
+a{
+    text-decoration: none;
+    
+}
+:root{
+    --main-color:#555;
+    --sec-color:#ff305b;
+    --footer-color:#333;
+    --main-font:'Source Sans 3', sans-serif ;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--main-font);
+    color: var(--footer-color);
+    margin-bottom: 10px;
+}
+.clr{
+    clear: both;
+    
+}
+.aspect-ratio{
+    aspect-ratio: 16/9;
+}
+/* ==============END GLOBAL============= */
+
+/* ==============START NAVBAR============ */
+.navbar{
+    background-color: var(--main-color);
+}
+.navbar .logo {
+    color: var(--sec-color);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.navbar li a{
+    font-weight: 300;
+}
+
+.navbar li a:hover {
+    color: var(--sec-color);
+}
+
+.navbar .nav-link.active{
+    color: var(--sec-color);
+}
+/*================== END NAVBAR ================*/
+
+/* ================ START HOME SECTION============*/
+#home {
+    background-image: url(../img/slider-02.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+.home .content h3{
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.home .content h1{
+    color: var(--sec-color);
+    font-size: 4.375rem;
+    margin-bottom: 10px;
+}
+
+@media(max-width:767px){
+      .home .content h1{
+        font-size: 38px;
+      }
+      
+}
+
+
+.home .content p{
+    font-size: 26px;
+    font-weight: 300;
+    color: #fff;
+    font-family: var(--main-font);
+}
+
+.home .content p::after{
+    content: "|";
+    animation: dev 8s infinite;
+    font-weight: 300;
+    padding-left: 1rem;
+}
+@keyframes dev {
+    1%{
+        content: "D";
+    }
+    2%{
+        content: "De";
+    }
+    3%{
+        content: "Dev";
+    }
+    4%{
+        content: "Deve";
+    }
+    5%{
+        content: "Devel";
+    }
+    6%{
+        content: "Develo";
+    }
+    7%{
+        content: "Develop";
+    }
+    8%{
+        content: "Develope";
+    }
+    9%{
+        content: "Developer";
+    }
+    
+    25%{
+        content: "Developer";
+    }
+    26%{
+        content: "Develope";
+    }
+    27%{
+        content: "Develop";
+    }
+    28%{
+        content: "Develo";
+    }
+    29%{
+        content: "Devel";
+    }
+    30%{
+        content: "Deve";
+    }
+    31%{
+        content: "Dev";
+    }
+    32%{
+        content: "De";
+    }
+    33%{
+        content: "D";
+    }
+    34%{
+        content: "|";
+    }
+    37%{
+        content: "D";
+    }
+    36%{
+        content: "De";
+    }
+    37%{
+        content: "Des";
+    }
+    38%{
+        content: "Desi";
+    }
+    39%{
+        content: "Desig";
+    }
+    40%{
+        content: "Design";
+    }
+    41%{
+        content: "Designe";
+    }
+    42%{
+        content: "Designer";
+    }
+    59%{
+        content: "Designer";
+    }
+    60%{
+        content: "Designe";
+    }
+    61%{
+        content: "Design";
+    }
+    62%{
+        content: "Desig";
+    }
+    63%{
+        content: "Desi";
+    }
+    64%{
+        content: "Des";
+    }
+    65%{
+        content: "De";
+    }
+    66%{
+        content: "D";
+    }
+    67%{
+        content: "|";
+    }
+    68%{
+        content: "D";
+    }
+    69%{
+        content: "De";
+    }
+    70%{
+        content: "Des";
+    }
+    71%{
+        content: "Des";
+    }
+    72%{
+        content: "Desi";
+    }
+    73%{
+        content: "Desig";
+    }
+    74%{
+        content: "Design";
+    }
+    75%{
+        content: "Designe";
+    }
+    76%{
+        content: "Designer";
+    }
+    92%{
+        content: "Designer";
+    }
+    93%{
+        content: "Designe";
+    }
+    94%{
+        content: "Design";
+    }
+    95%{
+        content: "Desig";
+    }
+    96%{
+        content: "Desi";
+    }
+    97%{
+        content: "Des";
+    }
+    98%{
+        content: "De";
+    }
+    99%{
+        content: "D";
+    }
+    100%{
+        content: "|";
+    }
+}
+
+/*============== END HOME SECTION ================ */
+
+
+.about .img-border{
+    border: 10px solid var(--main-color) ;
+}
+
+@media(max-width:992px){
+    .about .img-border{
+        border: none;
+    }
+}
+.about .img-border .image{
+    top: 20px;
+    left: 20px;
+} 
+ 
+.about .image img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+  
+.about .image .layer{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+}
+
+
+.about .image:hover .layer {
+    top: 0 !important;
+}
+
+ .social-icon a{
+    color: #fff;
+    font-size: 20px;
+    height: 20px;
+    padding: 10px;
+    transition: all 0.3s;
+ }
+
+ .social-icon a:hover{
+    color: var(--sec-color);
+ }
+
+ .about .about-dec h1{
+    position: relative;
+    padding-left: 13px;
+    line-height: 22px;
+    font-size: 34px;
+    margin-bottom: 25px;
+ }
+
+ .about .about-dec h1::after{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background-color: var(--sec-color);
+    left: 0;
+    top:0 ;
+ }
+
+ .about .about-dec p{
+   margin-bottom: 15px; 
+   padding-bottom: 15px;
+   border-bottom: #999 1px dashed ;
+ }
+
+
+ .about .about-dec .profile-about li{
+    width: 50%;
+    float: left;
+    padding-bottom: 20px; 
+  
+ }
+
+ .about .about-dec .profile-about li span{
+    color: var(--footer-color);
+ }
+
+ .download-cv-btn a{
+    color: #fff;
+    background-color: var(--sec-color);
+    margin-right: 10px;
+    padding: 10px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+ }
+ .download-cv-btn a:hover{
+    background-color: #ec2403;
+}
+ 
+@media(max-width:768px){
+    .about .image img{
+        width: 100%; 
+    } 
+    
+     .about .image {
+        margin: 48px;
+       } 
+
+    .about .about-dec .profile-about li {
+        width: 100%;
+        float: left;
+    }
+}   
+/*============= END ABOUT SECTION============ */
+
+/* =============STARET SERVICES SECTION============ */
+#services,.counter{
+    background-color: #f1f1f1;
+}
+
+ .title h2{
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    position: relative;
+ }
+
+ .title h2::after{
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 70px;
+    border: var(--sec-color) solid ;
+    border-width:1px 0 ;
+    padding: 4px 0 5px;
+ }
+
+ .title h2::before{
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    width: 160px;
+    background-color: var(--sec-color);
+    height: 1px;
+ }
+
+ .services .item i {
+    color: var(--sec-color);
+    font-size: 36px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+ }
+
+ .services .item:hover i{
+    transform: scale(1.2);
+ }
+ .services .item h3{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+ }
+
+ .services .item{
+    transition: all 0.3s;
+ }
+
+ .services .item:hover{
+    background-color: #fff;
+    box-shadow: 5px 5px 5px var(--footer-color) ;
+ }
+
+/* =============END SERVICES SECTION============ */
+
+/* =============STARET PORTFOLIO SECTION============ */
+
+ .portfolio .nav-pills .nav-link{
+    color: var(--main-color);
+    background-color: #fff;
+ }
+ .portfolio .nav-pills .nav-link.active{
+    color: var(--sec-color);
+ }
+
+ .portfolio .tab-content .row .image .layer {
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.portfolio .tab-content .row .image:hover .layer {
+    opacity: 1;
+    
+}
+
+.portfolio .tab-content .row .image .layer .icon{
+    transform: translate(-130%,-130%);
+    color: var(--sec-color);
+    font-size: 20px;
+}
+
+
+/* =============END PORTFOLIO SECTION============ */
+
+/* =============START COUNTER SECTION============ */
+
+.counter .item .icon {
+    color: var(--sec-color);
+    font-size: 26px ;
+    margin: 0 0 15px ;
+    font-weight: 400;
+}
+
+.counter .item .desc h3{
+    font-weight: 800;
+    font-size: 26px;
+}
+/* =============END COUNTER SECTION============ */
+
+/*==========START TESTIMONIAL SECTION==============*/
+.testimonial .carousel-indicators{
+    top: 100%;
+}
+
+.testimonial .carousel-indicators [data-bs-target] {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--sec-color);
+    margin-left: 2px;
+}
+
+.testimonial .carousel-itemContent{
+    background: linear-gradient(135deg, var(--sec-color) 20% ,#f1f1f1 20%) ;
+} 
+.testimonial .carousel-itemContent a{
+    font-size: 15px;
+    color: #777;
+
+}
+.testimonial .carousel-itemContent .star-icon{
+    color: #f1c30d;
+    margin-bottom: 12px;
+}
+
+/*=========== END TESTIMONIAL SECTION============= */
+
+/*============== START BLOG SECTION============= */
+
+.blog .blog-content .post h2{
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 15px;
+}
+
+.blog .blog-content .post h2:hover{
+    color:var(--sec-color);
+}
+
+.blog .blog-content .post .read-post a {
+    color: var(--footer-color);
+    transition: all 0.3s;
+    
+}
+.blog .blog-content .post .read-post a:hover{
+    color: var(--sec-color);
+}
+
+.blog .blog-content .post p{
+    color: var(--main-color) ;
+}
+
+/*================== END BLOG SECTION =============== */
+
+
+/*================ START FOOTER SECTION ==================== */
+.footer{
+    background-color: var(--footer-color);
+}
+
+.footer p a{
+    color: var(--sec-color);
+}
+
+.footer p a:hover{
+    text-decoration:underline;
+   
+}
+
+/*================== END FOOTER SECTION ======================== */
